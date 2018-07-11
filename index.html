@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="20">
     
-    <div class="navigation d-flex flex-row justify-content-between">
-        <div class="navigation-item d-flex flex-row">
+    <div id="navbar" class="navigation flex-row justify-content-between">
+        <div class="navigation-item d-flex flex-row align-items-center">
             <div class="social-icon"><i class="fab fa-facebook-square"></i></div>
             <div class="social-icon"><i class="fab fa-twitter-square"></i></div>
             <div class="social-icon"><i class="fab fa-google-plus-square"></i></div>
@@ -28,19 +28,11 @@
             <div class="social-icon"><i class="fas fa-envelope-square"></i></div>
         </div>
         <div class="navigation-item navigation-title" >Mikhail Karan</div>
-        <div class="navigation-item d-flex flex-row justify-content-end">
-            <div class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </div>
+        <div class="navigation-item list-group d-flex flex-row justify-content-end align-items-center">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#contact">Contact</a>
         </div>
     </div>
 
@@ -61,115 +53,119 @@
         </ul>
     </div>
 
-    <div class="home d-flex flex-row align-items-center justify-content-around flex-wrap">
-        <div class="background"></div>
-        <div class="background-left"></div>
-        <div class="h-social h-block d-flex flex-direction-row justify-content-end">
-            <div class="social-icon"><i class="fab fa-facebook-square"></i></div>
-            <div class="social-icon"><i class="fab fa-twitter-square"></i></div>
-            <div class="social-icon"><i class="fab fa-google-plus-square"></i></div>
-            <div class="social-icon"><i class="fab fa-linkedin"></i></div>
-            <div class="social-icon"><i class="fas fa-envelope-square"></i></div>
-        </div>
-        <div class="h-person h-block d-flex flex-column justify-content-center">
-            <div class="name">Mikhail Karan</div>
-            <div class="profile-image d-flex justify-content-center"><img src="img/profile.jpg" alt="" srcset=""></div>
-            <div class="job">Web Developer</div>
-        </div>
-        <div class="h-nav h-block d-flex flex-row">
-            <div class="nav-item">About</div>
-            <div class="nav-item">Portfolio</div>
-            <div class="nav-item">Contact</div>
-        </div>
-        <div class="h-down"><i class="fas fa-chevron-down"></i></div>
-    </div>
 
-    <div class="about d-flex align-items-center justify-content-center">
-        <div class="bg-mask"></div>
-        <div class="a-container">
-            <h1>About Me</h1>
-            <p class="aboutme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam!</p>
-            <p class="aboutme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! </p>
-        </div>
-    </div>
 
-    <div class="portfolio d-flex justify-content-center align-items-center flex-column">
-        <div class="bg-mask"></div>
-        <h1>Portfolio</h1>
-        <div class="p-catagories d-flex flex-row">
-            <div class="cat active">Catagory 1</div>
-            <div class="cat">Catagory 2</div>
-            <div class="cat">Catagory 3</div>
+        <div id="home" class="home d-flex flex-row align-items-center justify-content-around flex-wrap">
+            <div class="background"></div>
+            <div class="background-left"></div>
+            <div class="h-social h-block d-flex flex-direction-row justify-content-end">
+                <div class="social-icon"><i class="fab fa-facebook-square"></i></div>
+                <div class="social-icon"><i class="fab fa-twitter-square"></i></div>
+                <div class="social-icon"><i class="fab fa-google-plus-square"></i></div>
+                <div class="social-icon"><i class="fab fa-linkedin"></i></div>
+                <div class="social-icon"><i class="fas fa-envelope-square"></i></div>
+            </div>
+            <div class="h-person h-block d-flex flex-column justify-content-center">
+                <div class="name">Mikhail Karan</div>
+                <div class="profile-image d-flex justify-content-center"><img src="img/profile.jpg" alt="" srcset=""></div>
+                <div class="job">Web Developer</div>
+            </div>
+            <div class="h-nav h-block d-flex flex-row">
+                <div class="nav-item">About</div>
+                <div class="nav-item">Portfolio</div>
+                <div class="nav-item">Contact</div>
+            </div>
+            <div class="h-down"><i class="fas fa-chevron-down"></i></div>
         </div>
-        <div class="p-items">
-            <div class="catagory1 catagory d-flex flex-row flex-wrap justify-content-center">
-                <div class="portfolio-item">
-                    <div class="title">Portfolio Item</div>
-                    <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
-                    <div class="title">Portfolio Item</div>
-                    <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
-                    <div class="title">Portfolio Item</div>
-                    <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
-                    <div class="title">Portfolio Item</div>
-                    <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
-                    <div class="title">Portfolio Item</div>
-                    <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
-                    <div class="title">Portfolio Item</div>
-                    <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
+
+        <div id="about" class="about d-flex align-items-center justify-content-center">
+            <div class="background-about"></div>
+            <div class="background-about-left"></div>
+            <div class="bg-mask"></div>
+            <div class="a-container">
+                <h1>About Me</h1>
+                <p class="aboutme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam!</p>
+                <p class="aboutme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! </p>
+            </div>
+        </div>
+
+        <div id="portfolio" class="portfolio d-flex justify-content-center align-items-center flex-column">
+            <div class="bg-mask"></div>
+            <h1>Portfolio</h1>
+            <div class="p-catagories d-flex flex-row">
+                <div class="cat active">Catagory 1</div>
+                <div class="cat">Catagory 2</div>
+                <div class="cat">Catagory 3</div>
+            </div>
+            <div class="p-items">
+                <div class="catagory1 catagory d-flex flex-row flex-wrap justify-content-center">
+                    <div class="portfolio-item">
+                        <div class="title">Portfolio Item</div>
+                        <div class="splitter"></div>
+                        <img src="img/portfolio1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="title">Portfolio Item</div>
+                        <div class="splitter"></div>
+                        <img src="img/portfolio1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="title">Portfolio Item</div>
+                        <div class="splitter"></div>
+                        <img src="img/portfolio1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="title">Portfolio Item</div>
+                        <div class="splitter"></div>
+                        <img src="img/portfolio1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="title">Portfolio Item</div>
+                        <div class="splitter"></div>
+                        <img src="img/portfolio1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="title">Portfolio Item</div>
+                        <div class="splitter"></div>
+                        <img src="img/portfolio1.jpg" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="contact d-flex justify-content-center align-items-center flex-row flex-wrap">
-        <div class="bg-mask"></div>
-        <div class="c-email d-flex flex-column align-items-center">
-            <h1>Email Form</h1>
-            <form action="" method="post" class="d-flex flex-column align-items-center">
-                <div class="group">      
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Name</label>
-                </div>
-                <div class="group">      
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Email</label>
-                </div>
-                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
-                <button class="btn btn-primary" type="submit">Send</button>
-            </form>
-        </div>
-        <div class="c-other d-flex flex-column align-items-center">
-            <h1>Contact Info</h1>
-            <div class="social-item d-flex flex-column align-items-center">
-                <i class="fab fa-skype"></i>
-                <div class="social-link">microsoftaccount@microsoft.com</div>
+        <div id="contact" class="contact d-flex justify-content-center align-items-center flex-row flex-wrap">
+            <div class="bg-mask"></div>
+            <div class="c-email d-flex flex-column align-items-center">
+                <h1>Email Form</h1>
+                <form action="" method="post" class="d-flex flex-column align-items-center">
+                    <div class="group">      
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Name</label>
+                    </div>
+                    <div class="group">      
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </form>
             </div>
-            <div class="social-item d-flex flex-column align-items-center">
-                <i class="fas fa-envelope"></i>
-                <div class="social-link">emailsample@fakeemail.com</div>
+            <div class="c-other d-flex flex-column align-items-center">
+                <h1>Contact Info</h1>
+                <div class="social-item d-flex flex-column align-items-center">
+                    <i class="fab fa-skype"></i>
+                    <div class="social-link">microsoftaccount@microsoft.com</div>
+                </div>
+                <div class="social-item d-flex flex-column align-items-center">
+                    <i class="fas fa-envelope"></i>
+                    <div class="social-link">emailsample@fakeemail.com</div>
+                </div>
             </div>
         </div>
-    </div>
 
     <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>

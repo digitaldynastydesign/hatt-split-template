@@ -1,5 +1,6 @@
 body {
     font-family: 'Prosto One', cursive;
+    position: relative;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
@@ -30,10 +31,37 @@ body {
     align-self: flex-start;
 }
 
+.background-about {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 100vh solid #6534ff;
+    border-left: 100vw solid transparent;
+    align-self: flex-end;
+    z-index: -1;
+}
+
+.background-about-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 110vh solid #bbc4ef;
+    border-right: 100vw solid transparent;
+    z-index: -2;
+    align-self: flex-start;
+}
+
 .navigation {
-    /* display: none; */
+    display: flex;
     position: fixed;
     width: 100vw;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+    z-index: 100;
+}
+
+.navigation .active {
+    text-decoration: underline;
 }
 
 .navigation .navigation-item {
@@ -42,6 +70,16 @@ body {
 
 .navigation .navigation-title {
     text-align: center;
+    font-size: 2em;
+}
+
+.navigation .social-icon {
+    padding: 0 10px;
+    font-size: 2em;
+}
+
+.navigation .nav-link {
+    font-size: 1.5em;
 }
 
 .mobile-nav {
@@ -96,7 +134,7 @@ body {
 .home .h-nav .nav-item {
     font-size: 2em;
     padding: 0 1vw;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #fff;
     opacity: 0.8;
 }
@@ -136,6 +174,7 @@ body {
     height: 100vh;
     /* color: #fff; */
     /* display: none !important; */
+    background-color: #fff;
 }
 
 .portfolio .p-catagories {
