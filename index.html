@@ -6,6 +6,7 @@
 
     <title>Split Template</title>
     <meta name="description" content="This is a template for a scrolling single page portfolio page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="author" content="Mikhail Karan">
 
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -14,10 +15,10 @@
 
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/fontawesome/css/all.css">
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/styles.css?v=1.1">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="20">
+<body data-spy="scroll" data-target="#navbar, .mobile-nav" data-offset="20">
     
     <div id="navbar" class="navigation flex-row justify-content-between">
         <div class="navigation-item d-flex flex-row align-items-center">
@@ -29,28 +30,20 @@
         </div>
         <div class="navigation-item navigation-title" >Mikhail Karan</div>
         <div class="navigation-item list-group d-flex flex-row justify-content-end align-items-center">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </div>
     </div>
 
-    <div class="mobile-nav">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+    <div class="mobile-nav justify-content-center">
+        <div class="navigation-item list-group d-flex flex-row justify-content-end align-items-center">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
     </div>
 
     <div id="home" class="home d-flex flex-row align-items-center justify-content-around flex-wrap">
@@ -167,7 +160,7 @@
 
     <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=1.1"></script>
   
 </body>
 </html>

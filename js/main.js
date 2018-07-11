@@ -3,9 +3,9 @@ $( document ).ready(function() {
     $(window).on('activate.bs.scrollspy', function (event) {
         var navId = $('.list-group .active').attr('href');
         if (navId != "#home"){
-            $('#navbar').css('visibility', 'visible');
+            $('.navigation, .mobile-nav').css('visibility', 'visible');
         } else {
-            $('#navbar').css('visibility', 'hidden');
+            $('.navigation, .mobile-nav').css('visibility', 'hidden');
         }
       })
 });

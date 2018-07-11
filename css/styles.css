@@ -275,6 +275,8 @@ body {
 .contact .c-email button {
     width: 10vw;
     margin: 30px 0;
+    background-color: #6534ff;
+    border-color: #6534ff;
 }
 
 .contact .c-email textarea {
@@ -295,7 +297,7 @@ body {
 }
 
 .contact .c-other .social-link {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .group 			  { 
@@ -390,5 +392,101 @@ body {
     to 	{ width:0; background:transparent; }
   }
 
+  /* Responsive Media Queries */
+
+  @media (max-width: 575.98px) { /* Phone Portrait */
+    .home {
+        flex-direction: column !important;
+    }
+
+    .background {
+        border-bottom: 100vh solid #6534ff;
+    }
+
+    .navigation .social-icon, .navigation .nav-link {
+    display: none;
+    }
+
+    .navigation .navigation-item {
+        width: auto;
+    }
+
+    .mobile-nav {
+        display: flex;
+        visibility: hidden;
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        z-index: 100;
+        background-color: #fff;
+        border-top: 1px solid lightgray;
+        font-size: 1.5em;
+    }
+
+    .mobile-nav a {
+        color: #6534ff;
+    }
+
+    .mobile-nav .active {
+        text-decoration: underline;
+    }
+
+    .home .h-block {
+        width: auto;
+    }
+
+    .home .name, .home .job { 
+        font-size: 2.5em;
+    }
+
+    .home .h-nav .nav-item {
+        font-size: 1.5em;
+    }
+
+    .home .h-down {
+        position: relative;
+        align-self: center;
+    }
+
+    .about .a-container {
+        width: auto;
+    }
+
+    .about h1 {
+        text-align: center;
+    }
+
+    .portfolio {
+        height: auto;
+    }
+
+    .portfolio .p-catagories .cat {
+        font-size: 1em;
+    }
+
+    .contact {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .contact .c-email, .contact .c-other {
+        width: auto;
+        border-right: none;
+    }
+
+    .contact .c-other {
+        padding-bottom: 30px;
+    }
+
+    .contact .c-other .social-link {
+        font-size: 1em;
+    }
+
+    .contact .c-email button {
+        width: 40vw;
+    }
+
+
+  }
 
 
