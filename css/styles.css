@@ -58,6 +58,11 @@ body {
     background-color: #fff;
     border-bottom: 1px solid lightgray;
     z-index: 100;
+    visibility: hidden;
+}
+
+.navigation a {
+    color: #6534ff;
 }
 
 .navigation .active {
@@ -71,11 +76,13 @@ body {
 .navigation .navigation-title {
     text-align: center;
     font-size: 2em;
+    color: #6534ff;
 }
 
 .navigation .social-icon {
     padding: 0 10px;
     font-size: 2em;
+    color: #6534ff;
 }
 
 .navigation .nav-link {
@@ -144,11 +151,16 @@ body {
     border-right: 2px solid #fff;
 }
 
+.home a{
+    color: #fff;
+}
+
 .home .h-down {
     align-self: flex-end;
     position: absolute;
     font-size: 3em;
     color: #fff;
+    opacity: 0.8;
 }
 
 /* End Home Section */
@@ -164,6 +176,7 @@ body {
     width: 50vw;
     border: 1px solid lightgray;
     padding: 2vw;
+    background-color: #fff;
 }
 
 /* End About Us Section */
@@ -215,7 +228,7 @@ body {
     position: absolute;
     align-self: flex-end;
     padding: 5px;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 100;
     color: #fff;
 }
