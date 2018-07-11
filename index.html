@@ -8,36 +8,40 @@
     <meta name="description" content="This is a template for a scrolling single page portfolio page">
     <meta name="author" content="Mikhail Karan">
 
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
 <body>
-
-    <div class="navbar">
-        <div class="nav-social">
+    
+    <div class="navigation d-flex flex-row justify-content-between">
+        <div class="navigation-item d-flex flex-row">
             <div class="social-icon"><i class="fab fa-facebook-square"></i></div>
             <div class="social-icon"><i class="fab fa-twitter-square"></i></div>
             <div class="social-icon"><i class="fab fa-google-plus-square"></i></div>
             <div class="social-icon"><i class="fab fa-linkedin"></i></div>
             <div class="social-icon"><i class="fas fa-envelope-square"></i></div>
         </div>
-        <a class="navbar-brand" href="#">John Doe</a>
-        <ul class="nav">
-            <li class="nav-item">
+        <div class="navigation-item navigation-title" >Mikhail Karan</div>
+        <div class="navigation-item d-flex flex-row justify-content-end">
+            <div class="nav-item">
                 <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
+            </div>
+            <div class="nav-item">
                 <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
+            </div>
+            <div class="nav-item">
                 <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
+            </div>
+            <div class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 
     <div class="mobile-nav">
@@ -57,20 +61,22 @@
         </ul>
     </div>
 
-    <div class="home d-flex flex-row align-items-center justify-content-center">
-        <div class="h-social d-flex flex-direction-row">
+    <div class="home d-flex flex-row align-items-center justify-content-around flex-wrap">
+        <div class="background"></div>
+        <div class="background-left"></div>
+        <div class="h-social h-block d-flex flex-direction-row justify-content-end">
             <div class="social-icon"><i class="fab fa-facebook-square"></i></div>
             <div class="social-icon"><i class="fab fa-twitter-square"></i></div>
             <div class="social-icon"><i class="fab fa-google-plus-square"></i></div>
             <div class="social-icon"><i class="fab fa-linkedin"></i></div>
             <div class="social-icon"><i class="fas fa-envelope-square"></i></div>
         </div>
-        <div class="h-person d-flex flex-column justify-content-center">
-            <div class="name">John Doe</div>
-            <div class="profile-image"><img src="img/profile.jpg" alt="" srcset=""></div>
-            <div class="job">Designer</div>
+        <div class="h-person h-block d-flex flex-column justify-content-center">
+            <div class="name">Mikhail Karan</div>
+            <div class="profile-image d-flex justify-content-center"><img src="img/profile.jpg" alt="" srcset=""></div>
+            <div class="job">Web Developer</div>
         </div>
-        <div class="h-nav d-flex flex-row">
+        <div class="h-nav h-block d-flex flex-row">
             <div class="nav-item">About</div>
             <div class="nav-item">Portfolio</div>
             <div class="nav-item">Contact</div>
@@ -79,6 +85,7 @@
     </div>
 
     <div class="about d-flex align-items-center justify-content-center">
+        <div class="bg-mask"></div>
         <div class="a-container">
             <h1>About Me</h1>
             <p class="aboutme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur iste nemo unde, blanditiis perferendis officiis minus maxime, aperiam nihil perspiciatis. Mollitia nobis suscipit nihil eos tenetur alias nulla quam!</p>
@@ -87,9 +94,10 @@
     </div>
 
     <div class="portfolio d-flex justify-content-center align-items-center flex-column">
+        <div class="bg-mask"></div>
         <h1>Portfolio</h1>
         <div class="p-catagories d-flex flex-row">
-            <div class="cat">Catagory 1</div>
+            <div class="cat active">Catagory 1</div>
             <div class="cat">Catagory 2</div>
             <div class="cat">Catagory 3</div>
         </div>
@@ -98,38 +106,39 @@
                 <div class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.png" alt="" srcset="">
+                    <img src="img/portfolio1.jpg" alt="" srcset="">
                 </div>
                 <div class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.png" alt="" srcset="">
+                    <img src="img/portfolio1.jpg" alt="" srcset="">
                 </div>
                 <div class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.png" alt="" srcset="">
+                    <img src="img/portfolio1.jpg" alt="" srcset="">
                 </div>
                 <div class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.png" alt="" srcset="">
+                    <img src="img/portfolio1.jpg" alt="" srcset="">
                 </div>
                 <div class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.png" alt="" srcset="">
+                    <img src="img/portfolio1.jpg" alt="" srcset="">
                 </div>
                 <div class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.png" alt="" srcset="">
+                    <img src="img/portfolio1.jpg" alt="" srcset="">
                 </div>
             </div>
         </div>
     </div>
 
     <div class="contact d-flex justify-content-center align-items-center flex-row flex-wrap">
+        <div class="bg-mask"></div>
         <div class="c-email d-flex flex-column align-items-center">
             <h1>Email Form</h1>
             <form action="" method="post" class="d-flex flex-column align-items-center">
