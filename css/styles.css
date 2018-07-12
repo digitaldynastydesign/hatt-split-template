@@ -58,7 +58,9 @@ body {
     background-color: #fff;
     border-bottom: 1px solid lightgray;
     z-index: 101;
-    visibility: hidden;
+    /* visibility: hidden; */
+    top: -53px;
+    transition: top 0.5s;
 }
 
 .navigation a {
@@ -242,6 +244,7 @@ body {
     /* border-bottom: 230px solid #e62739; */
     border-right: 200px solid transparent;
     /* border-right: 362px solid transparent; */
+    transition: border-bottom 0.3s;
 }
 
 .portfolio .portfolio-item:nth-child(even) .splitter {
@@ -252,6 +255,7 @@ body {
     /* border-bottom: 230px solid #e62739; */
     border-left: 200px solid transparent;
     /* border-left: 362px solid transparent; */
+    transition: border-bottom 0.3s;
 }
 
 .portfolio .portfolio-item img {
@@ -447,14 +451,15 @@ body {
 
     .mobile-nav {
         display: flex;
-        visibility: hidden;
+        /* visibility: hidden; */
         position: fixed;
         width: 100vw;
-        bottom: 0;
+        bottom: -50px;
         z-index: 101;
         background-color: #fff;
         border-top: 1px solid lightgray;
         font-size: 1.2em;
+        transition: bottom 0.5s;
     }
 
     .mobile-nav a {
