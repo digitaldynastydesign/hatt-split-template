@@ -57,7 +57,7 @@ body {
     width: 100vw;
     background-color: #fff;
     border-bottom: 1px solid lightgray;
-    z-index: 100;
+    z-index: 101;
     visibility: hidden;
 }
 
@@ -268,7 +268,7 @@ body {
 }
 
 .contact .c-email {
-    width: 33vw;
+    width: 40vw;
     border-right: 1px solid #000;
 }
 
@@ -284,7 +284,7 @@ body {
 }
 
 .contact .c-other{
-    width: 33vw;
+    width: 40vw;
 }
 
 .contact .c-other .social-item {
@@ -394,7 +394,27 @@ body {
 
   /* Responsive Media Queries */
 
-  @media (max-width: 575.98px) { /* Phone Portrait */
+  @media (max-width: 1449.98px) { /* Large screen laptops with low resolution */
+      .home .h-social .social-icon {
+          font-size: 2.5em;
+      }
+
+      .home .h-nav .nav-item {
+          font-size: 1.5em;
+      }
+
+      .portfolio {
+          height: auto;
+      }
+
+      .navigation .nav-link {
+        font-size: 1em;
+    }
+      
+   }
+
+  @media (max-width: 991.98px) { /* Tablet/Landscape Phones/Portrait Phones */
+
     .home {
         flex-direction: column !important;
     }
@@ -417,14 +437,18 @@ body {
         position: fixed;
         width: 100vw;
         bottom: 0;
-        z-index: 100;
+        z-index: 101;
         background-color: #fff;
         border-top: 1px solid lightgray;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .mobile-nav a {
         color: #6534ff;
+    }
+
+    .mobile-nav .nav-link {
+        padding: .5rem 0.5rem
     }
 
     .mobile-nav .active {
@@ -446,6 +470,7 @@ body {
     .home .h-down {
         position: relative;
         align-self: center;
+        font-size: 2em;
     }
 
     .about .a-container {
@@ -486,7 +511,13 @@ body {
         width: 40vw;
     }
 
+   }
 
-  }
+@media (max-height: 399px) { /* Landscape Phones or short height screens*/
+    .home .h-down {
+        display: none;
+    }
+}
+
 
 
