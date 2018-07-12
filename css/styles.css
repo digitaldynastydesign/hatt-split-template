@@ -400,7 +400,7 @@ body {
       }
 
       .home .h-nav .nav-item {
-          font-size: 1.5em;
+          font-size: 1.25em;
       }
 
       .portfolio {
@@ -409,6 +409,20 @@ body {
 
       .navigation .nav-link {
         font-size: 1em;
+    }
+
+    .contact .c-other .social-link {
+        font-size: 1.25em;
+    } 
+
+    .contact {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .contact .c-email, .contact .c-other {
+        width: auto;
+        border-right: none;
     }
       
    }
@@ -487,16 +501,6 @@ body {
 
     .portfolio .p-catagories .cat {
         font-size: 1em;
-    }
-
-    .contact {
-        flex-direction: column !important;
-        height: auto;
-    }
-
-    .contact .c-email, .contact .c-other {
-        width: auto;
-        border-right: none;
     }
 
     .contact .c-other {
