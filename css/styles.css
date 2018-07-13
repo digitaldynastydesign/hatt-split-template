@@ -33,18 +33,6 @@ body {
     animation: chomp2 3s 1 forwards 1s;
 }
 
-@media (min-width: 992px){
-    @keyframes  chomp1 {
-        from {border-bottom: 0vh solid #6534ff;}
-        to {border-bottom: 90vh solid #6534ff;}
-    }
-
-    @keyframes  chomp2 {
-        from {border-top: 0vh solid #bbc4ef;}
-        to {border-top: 100vh solid #bbc4ef;}
-    }
-}
-
 .background-about {
     position: absolute;
     width: 0;
@@ -131,7 +119,7 @@ body {
 }
 
 .home .h-person img {
-    border-radius: 2200px;
+    border-radius: 220px;
     height: 40vh;
 }
 
@@ -274,7 +262,7 @@ body {
 
 .portfolio .portfolio-item img {
     height: 230px;
-    width: 362px;
+    width: 360px;
 }
 
 /* End Portfolio Page */
@@ -410,6 +398,19 @@ body {
     to 	{ width:0; background:transparent; }
   }
 
+  
+@media (min-width: 992px){
+    @keyframes  chomp1 {
+        from {border-bottom: 0vh solid #6534ff;}
+        to {border-bottom: 90vh solid #6534ff;}
+    }
+
+    @keyframes  chomp2 {
+        from {border-top: 0vh solid #bbc4ef;}
+        to {border-top: 100vh solid #bbc4ef;}
+    }
+}
+
   /* Responsive Media Queries */
 
   @media (max-width: 1449.98px) { /* Large screen laptops with low resolution */
@@ -508,6 +509,10 @@ body {
         font-size: 1.5em;
     }
 
+    .about {
+        height: auto;
+    }
+
     .home .h-down {
         position: relative;
         align-self: center;
@@ -542,12 +547,32 @@ body {
         width: 40vw;
     }
 
+    .contact .bar, .contact .highlight, .contact input {
+        width: 300px;
+    }
+
    }
 
 @media (max-height: 399px) { /* Landscape Phones or short height screens*/
     .home .h-down {
         display: none;
     }
+}
+
+@media (max-width: 361px) { /* small phones */
+    .home .h-nav .nav-item {
+        font-size: 1em;
+    }
+
+    .portfolio .portfolio-item img {
+        height: 230px;
+        width: 300px;
+    }
+
+    .mobile-nav {
+        font-size: 1em;
+    }
+    
 }
 
 
