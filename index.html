@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <title>Split Template</title>
-    <meta name="description" content="This is a template for a scrolling single page portfolio page">
+    <meta name="description" content="This is a template for a scrolling single page portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="author" content="Mikhail Karan">
 
@@ -15,12 +15,13 @@
 
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/fontawesome/css/all.css">
+    <link href="lib/lightbox/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css?v=1.1">
 </head>
 
-<body data-spy="scroll" data-target="#navbar, .mobile-nav" data-offset="20">
+<body data-spy="scroll" data-target=".nav-scroll" data-offset="20">
     
-    <div id="navbar" class="navigation flex-row justify-content-between">
+    <div id="navbar" class="navigation nav-scroll flex-row justify-content-between">
         <div class="navigation-item d-flex flex-row align-items-center">
             <div class="social-icon"><i class="fab fa-facebook-square"></i></div>
             <div class="social-icon"><i class="fab fa-twitter-square"></i></div>
@@ -37,7 +38,7 @@
         </div>
     </div>
 
-    <div class="mobile-nav justify-content-center">
+    <div class="mobile-nav nav-scroll justify-content-center">
         <div class="navigation-item list-group d-flex flex-row justify-content-end align-items-center">
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
@@ -90,36 +91,36 @@
         </div> -->
         <div class="p-items">
             <div class="catagory1 catagory d-flex flex-row flex-wrap justify-content-center">
-                <div class="portfolio-item">
+                <a href="img/720x460.png" data-lightbox="roadtrip" class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
+                    <img src="img/360x230.png" alt="" srcset="">
+                </a>
+                <a href="img/720x460.png" data-lightbox="roadtrip" class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
+                    <img src="img/360x230.png" alt="" srcset="">
+                </a>
+                <a href="img/720x460.png" data-lightbox="roadtrip" class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
+                    <img src="img/360x230.png" alt="" srcset="">
+                </a>
+                <a href="img/720x460.png" data-lightbox="roadtrip" class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
+                    <img src="img/360x230.png" alt="" srcset="">
+                </a>
+                <a href="img/720x460.png" data-lightbox="roadtrip" class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
-                <div class="portfolio-item">
+                    <img src="img/360x230.png" alt="" srcset="">
+                </a>
+                <a href="img/720x460.png" data-lightbox="roadtrip" class="portfolio-item">
                     <div class="title">Portfolio Item</div>
                     <div class="splitter"></div>
-                    <img src="img/portfolio1.jpg" alt="" srcset="">
-                </div>
+                    <img src="img/360x230.png" alt="" srcset="">
+                </a>
             </div>
         </div>
     </div>
@@ -160,6 +161,7 @@
 
     <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.js"></script>
     <script src="js/main.js?v=1.1"></script>
   
 </body>
