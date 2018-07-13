@@ -19,7 +19,7 @@ body {
     border-left: 100vw solid transparent;
     align-self: flex-end;
     z-index: -1;
-    animation: chomp1 3s 1 forwards 1s;
+    animation: chomp1 4s 1 forwards 1s;
 }
 
 .background-left {
@@ -401,8 +401,9 @@ body {
   
 @media (min-width: 992px){
     @keyframes  chomp1 {
-        from {border-bottom: 0vh solid #6534ff;}
-        to {border-bottom: 90vh solid #6534ff;}
+        0% {border-bottom: 0vh solid #6534ff;}
+        80% {border-bottom: 100vh solid #6534ff;}
+        100% {border-bottom: 90vh solid #6534ff;}
     }
 
     @keyframes  chomp2 {
