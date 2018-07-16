@@ -510,10 +510,6 @@ body {
         font-size: 1.5em;
     }
 
-    .about {
-        height: auto;
-    }
-
     .home .h-down {
         position: relative;
         align-self: center;
@@ -563,6 +559,10 @@ body {
 @media (max-width: 361px) { /* small phones */
     .home .h-nav .nav-item {
         font-size: 1em;
+    }
+
+    .about {
+        height: auto;
     }
 
     .portfolio .portfolio-item img {
