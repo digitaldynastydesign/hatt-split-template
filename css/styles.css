@@ -550,9 +550,23 @@ body {
 
    }
 
-@media (max-height: 399px) { /* Landscape Phones or short height screens*/
+@media (max-height: 420px) { /* Landscape Phones or short height screens*/
     .home .h-down {
         display: none;
+    }
+
+    .home .name, .home .job {
+        font-size: 1.5em;
+    }
+
+    .about {
+        height: auto;
+    }
+}
+
+@media (min-height: 1300px) {
+    .home .h-person img {
+        height: 25vh;
     }
 }
 
