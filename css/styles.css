@@ -60,7 +60,6 @@ body {
     background-color: #fff;
     border-bottom: 1px solid lightgray;
     z-index: 101;
-    /* visibility: hidden; */
     top: -53px;
     transition: top 0.5s;
 }
@@ -111,7 +110,6 @@ body {
 
 .home {
     height: 100vh;
-    /* display: none !important;  */
 }
 
 .home .h-block {
@@ -127,7 +125,6 @@ body {
     text-align: center;
     margin: 1vh 0;
     font-size: 3em;
-    /* font-weight: bold; */
     color: #fff;
 }
 
@@ -189,8 +186,6 @@ body {
 
 .portfolio {
     height: 100vh;
-    /* color: #fff; */
-    /* display: none !important; */
     background-color: #fff;
 }
 
@@ -243,9 +238,7 @@ body {
     width: 0;
     height: 0;
     border-bottom: 140px solid #6534ff;
-    /* border-bottom: 230px solid #e62739; */
     border-right: 200px solid transparent;
-    /* border-right: 362px solid transparent; */
     transition: border-bottom 0.3s;
 }
 
@@ -254,9 +247,7 @@ body {
     width: 0;
     height: 0;
     border-bottom: 140px solid #6534ff;
-    /* border-bottom: 230px solid #e62739; */
     border-left: 200px solid transparent;
-    /* border-left: 362px solid transparent; */
     transition: border-bottom 0.3s;
 }
 
