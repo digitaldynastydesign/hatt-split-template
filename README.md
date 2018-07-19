@@ -2,6 +2,12 @@
 
 Split is a portfolio template that any professional can use to quickly and professionally show off their work and contact information
 
+# Preview
+
+[![Split Preview](https://digitaldynasty.ca/templates/split-template/split%20shot.PNG)]
+
+**[Live Preview](https://digitaldynasty.ca/templates/split-template/)**
+
 ## Usage
 
 To use simple clone or download the repository and edit the index.html as well as the styles.css files. These files contain all the layout and styling that you will need to input your details and change colors and layout to your preference.
