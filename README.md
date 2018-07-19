@@ -4,7 +4,7 @@ Split is a portfolio template that any professional can use to quickly and profe
 
 # Preview
 
-[![Split Preview](https://digitaldynasty.ca/templates/split-template/split%20shot.PNG)]
+[![Split Preview](https://digitaldynasty.ca/templates/split-template/split%20shot.PNG)](https://digitaldynasty.ca/templates/split-template/)
 
 **[Live Preview](https://digitaldynasty.ca/templates/split-template/)**
 
